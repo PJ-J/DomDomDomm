@@ -38,10 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
     "#f64c72",
   ];
 
+ 
+
   squDiv.addEventListener("click", function (e) {
     if (e.target.className === "blackSquare") {
+      let randColor =
+      "rgb(" +
+      Math.floor(Math.random() * 255) +
+      "," +
+      Math.floor(Math.random() * 255) +
+      "," +
+      Math.floor(Math.random() * 255) +
+      ")";
       e.target.style.background =
-        colorArray[Math.floor(Math.random() * colorArray.length)];
+        randColor;
     }
   });
 
