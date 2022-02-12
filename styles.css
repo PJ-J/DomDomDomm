@@ -1,0 +1,32 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: beige;
+}
+
+.blackSquare {
+  
+  width: 120px;
+  height: 120px;
+  background: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+p {
+  color: red;
+  text-align: center;
+  padding-top: 35px;
+  display: none;
+  font-size: larger;
+
+  
+}
+
+.blackSquare:hover p {
+  display: block;
+
+  
+}
+
