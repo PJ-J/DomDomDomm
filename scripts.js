@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
     squareDiv.addEventListener("dblclick", function () {
       if (squareDiv.id % 2 === 0) {
         if (squareDiv.nextSibling === null) {
-          alert("no more box");
+          alert("no more box  :(");
         } else {
           squDiv.removeChild(squareDiv.nextSibling);
         }
       } else {
         if (squareDiv.previousSibling === null) {
-          alert("no more box");
+          alert("no more box  :(");
         } else {
           squDiv.removeChild(squareDiv.previousSibling);
         }
