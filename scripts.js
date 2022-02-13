@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let btnDiv = document.createElement("div");
-  btnDiv.className = "row justify-content-center";
+  btnDiv.className = "row justify-content-center mt-3";
   let squDiv = document.createElement("div");
   squDiv.className = "row m-3";
   document.body.appendChild(btnDiv);
