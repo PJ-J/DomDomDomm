@@ -22,6 +22,21 @@ document.addEventListener("DOMContentLoaded", function () {
     let squaretext = document.createTextNode(i);
     squarep.appendChild(squaretext);
     squareDiv.appendChild(squarep);
+    squareDiv.addEventListener("dblclick", function () {
+      if (squareDiv.id % 2 === 0) {
+        if (squareDiv.nextSibling === null) {
+          alert("no more box");
+        } else {
+          squDiv.removeChild(squareDiv.nextSibling);
+        }
+      } else {
+        if (squareDiv.previousSibling === null) {
+          alert("no more box");
+        } else {
+          squDiv.removeChild(squareDiv.previousSibling);
+        }
+      }
+    });
     i++;
   };
 
@@ -38,41 +53,38 @@ document.addEventListener("DOMContentLoaded", function () {
     "#f64c72",
   ];
 
- 
-
   squDiv.addEventListener("click", function (e) {
     if (e.target.className === "blackSquare") {
       let randColor =
-      "rgb(" +
-      Math.floor(Math.random() * 255) +
-      "," +
-      Math.floor(Math.random() * 255) +
-      "," +
-      Math.floor(Math.random() * 255) +
-      ")";
-      e.target.style.background =
-        randColor;
+        "rgb(" +
+        Math.floor(Math.random() * 255) +
+        "," +
+        Math.floor(Math.random() * 255) +
+        "," +
+        Math.floor(Math.random() * 255) +
+        ")";
+      e.target.style.background = randColor;
     }
   });
 
-  squDiv.addEventListener("dblclick", function (e) {
-    if (e.target.id % 2 === 0) {
-      let clickedId = Number(e.target.id);
-      let remove = document.getElementById(clickedId + 1);
-      if (!remove) {
-        alert("ain't no box here");
-      } else {
-        remove.remove();
-      }
-    } else {
-      let clickedId = Number(e.target.id);
-      let remove = document.getElementById(clickedId - 1);
+  // squDiv.addEventListener("dblclick", function (e) {
+  //   if (e.target.id % 2 === 0) {
+  //     let clickedId = Number(e.target.id);
+  //     let remove = document.getElementById(clickedId + 1);
+  //     if (!remove) {
+  //       alert("no box here");
+  //     } else {
+  //       remove.remove();
+  //     }
+  //   } else {
+  //     let clickedId = Number(e.target.id);
+  //     let remove = document.getElementById(clickedId - 1);
 
-      if (!remove) {
-        alert("ain't no box here");
-      } else {
-        remove.remove();
-      }
-    }
-  });
+  //     if (!remove) {
+  //       alert("no box here");
+  //     } else {
+  //       remove.remove();
+  //     }
+  //   }
+  // });
 });
