@@ -1,5 +1,5 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   background-color: beige;
 }
 
@@ -10,13 +10,15 @@ body {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   border: 2px black dashed;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {
+  background-color: #3e8e41;
+}
 
 .button:active {
   background-color: #3e8e41;
@@ -25,7 +27,6 @@ body {
 }
 
 .blackSquare {
-  
   width: 120px;
   height: 120px;
   background: black;
@@ -38,20 +39,13 @@ body {
 }
 
 p {
-  
   color: white;
-  
   vertical-align: middle;
- line-height: 60px;
+  line-height: 60px;
   display: none;
   font-size: xx-large;
-
-  
 }
 
 .blackSquare:hover p {
   display: block;
-
-  
 }
-
