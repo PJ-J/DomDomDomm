@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   let btnDiv = document.createElement("div");
+  btnDiv.className = "row justify-content-center";
   let squDiv = document.createElement("div");
+  squDiv.className = "row m-3";
   document.body.appendChild(btnDiv);
   document.body.appendChild(squDiv);
 
@@ -22,6 +24,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let squaretext = document.createTextNode(i);
     squarep.appendChild(squaretext);
     squareDiv.appendChild(squarep);
+    squareDiv.addEventListener("click", function () {
+      if (squareDiv.className === "blackSquare") {
+        let randColor =
+          "rgb(" +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          ")";
+        squareDiv.style.background = randColor;
+      }
+    });
     squareDiv.addEventListener("dblclick", function () {
       if (squareDiv.id % 2 === 0) {
         if (squareDiv.nextSibling === null) {
@@ -53,19 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "#f64c72",
   ];
 
-  squDiv.addEventListener("click", function (e) {
-    if (e.target.className === "blackSquare") {
-      let randColor =
-        "rgb(" +
-        Math.floor(Math.random() * 255) +
-        "," +
-        Math.floor(Math.random() * 255) +
-        "," +
-        Math.floor(Math.random() * 255) +
-        ")";
-      e.target.style.background = randColor;
-    }
-  });
+  
 
   // squDiv.addEventListener("dblclick", function (e) {
   //   if (e.target.id % 2 === 0) {
