@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let btnText = document.createTextNode("Add Square");
   button.className = "button";
   button.appendChild(btnText);
-
   btnDiv.appendChild(button);
 
   let i = 1;

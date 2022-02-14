@@ -13,7 +13,7 @@ body {
   background-color: #424040;
   border: 2px black dashed;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px 4px #999;
 }
 
 .button:hover {
@@ -23,7 +23,7 @@ body {
 
 .button:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px 8px #666;
   transform: translateY(4px);
 }
 
