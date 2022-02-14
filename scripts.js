@@ -56,38 +56,4 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   button.addEventListener("click", addSquareDiv);
-
-  let colorArray = [
-    "#242582",
-    "#41b3a3",
-    "#c38d9e",
-    "#E8a87c",
-    "#85DCB0",
-    "#e27d60",
-    "#553d67",
-    "#f64c72",
-  ];
-
-  
-
-  // squDiv.addEventListener("dblclick", function (e) {
-  //   if (e.target.id % 2 === 0) {
-  //     let clickedId = Number(e.target.id);
-  //     let remove = document.getElementById(clickedId + 1);
-  //     if (!remove) {
-  //       alert("no box here");
-  //     } else {
-  //       remove.remove();
-  //     }
-  //   } else {
-  //     let clickedId = Number(e.target.id);
-  //     let remove = document.getElementById(clickedId - 1);
-
-  //     if (!remove) {
-  //       alert("no box here");
-  //     } else {
-  //       remove.remove();
-  //     }
-  //   }
-  // });
 });
